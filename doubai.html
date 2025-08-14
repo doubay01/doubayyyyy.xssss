@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doubay</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            font-family: 'Courier New', Courier, monospace;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+        .image-container img {
+            width: 500px; 
+            height: auto;
+            border: 2px solid #ffffff; 
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 255, 0.7); 
+        }
+        .text {
+            margin-top: 20px;
+            font-size: 2em; 
+            color: rgb(255, 255, 255); 
+            text-shadow: 0px 0px 8px #ffffff, 0px 0px 15px #ffffff, 0px 0px 25px #ffffff; 
+            letter-spacing: 2px; 
+        }
+    </style>
+</head>
+<body>
+      <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="https://cdn.discordapp.com/attachments/1259649705978368141/1405567954719997992/5dc6e8b6c0860e0865f296424899fee5.mp4?ex=689f4caa&is=689dfb2a&hm=b14f2a1083a95b48fa756b462c78cdfaec6ce1ca7aa1636ed8ba6b9e78938ba3&" type="video/mp4">
+    </video>
+  </div>
+    <div class="image-container">
+        <img src="https://cdn.discordapp.com/attachments/1381691894882635879/1405274749285961808/Screenshot_2025-08-03_190709.png?ex=689e3b98&is=689cea18&hm=17030eded2dc00a8386dec9a0378c894f27f218615cf493fc200c7ed704b1f95&" alt="Discord Image">
+  <!-- Hidden Autoplay Audio -->
+  <audio src="https://cdn.discordapp.com/attachments/1381691894882635879/1405276322741358684/videoplayback.m4a?ex=689e3d10&is=689ceb90&hm=2ec80a9fd919d77a704f08919b6c00838eb5ab6090015e94338136bdfb95cf71&" autoplay loop hidden></audio>
+  <script>
+  const bgm = new Audio('https://cdn.discordapp.com/attachments/1381691894882635879/1405276322741358684/videoplayback.m4a?ex=689e3d10&is=689ceb90&hm=2ec80a9fd919d77a704f08919b6c00838eb5ab6090015e94338136bdfb95cf71&');
+  bgm.loop = true;
+  bgm.volume = 1;
+  bgm.play().catch(() => {
+    document.addEventListener('click', () => bgm.play());
+  });
+
+</script>
+<div class="text">Hi, I'm Doubay and this server has been fucked.</div>
+
+    <div class="text">This is only the beginning. I'm not done yet</div>
+
+    </script>
+</body>
+</html>
